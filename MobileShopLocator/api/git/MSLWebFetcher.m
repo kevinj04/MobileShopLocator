@@ -31,10 +31,18 @@ static NSURL *_productListURL;
     }
 }
 
-+ (void)fetchListWithCompletionHandler:(void(^)(NSURLResponse *response, NSData *data, NSError *connectionError))handler {
++ (void)fetchListWithCompletionHandler:(void(^)(MSLProductList *productList, NSError *error))handler {
     
     NSURLRequest *request = [NSURLRequest requestWithURL:_productListURL cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10];
-    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:handler];
+    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+        
+        MSLProductList *productList = nil;
+        if (!connectionError) {
+            NSString *responseString = [[NSString alloc] initWithBytes:data.bytes length:data.length encoding:NSUTF8StringEncoding];
+            productList = [MSLProductList listWithString:responseString];
+        }
+        handler(productList, connectionError);
+    }];
 }
 
 @end

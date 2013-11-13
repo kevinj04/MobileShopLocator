@@ -20,6 +20,7 @@
 		0ACADD031834262000EF33A3 /* MSLProductList.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACADD021834262000EF33A3 /* MSLProductList.m */; };
 		0ACADD09183429A000EF33A3 /* MSLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACADD08183429A000EF33A3 /* MSLLocationManager.m */; };
 		0ACADD1018342C1800EF33A3 /* MSLWebFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACADD0F18342C1800EF33A3 /* MSLWebFetcher.m */; };
+		0ACADD191834321300EF33A3 /* MSLTwitterFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACADD181834321300EF33A3 /* MSLTwitterFetcher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		0ACADD0D18342B7200EF33A3 /* MSLProductFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSLProductFetcher.h; sourceTree = "<group>"; };
 		0ACADD0E18342C1800EF33A3 /* MSLWebFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSLWebFetcher.h; sourceTree = "<group>"; };
 		0ACADD0F18342C1800EF33A3 /* MSLWebFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSLWebFetcher.m; sourceTree = "<group>"; };
+		0ACADD171834321300EF33A3 /* MSLTwitterFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSLTwitterFetcher.h; sourceTree = "<group>"; };
+		0ACADD181834321300EF33A3 /* MSLTwitterFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSLTwitterFetcher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +184,8 @@
 		0ACADCF1183423F700EF33A3 /* twitter */ = {
 			isa = PBXGroup;
 			children = (
+				0ACADD171834321300EF33A3 /* MSLTwitterFetcher.h */,
+				0ACADD181834321300EF33A3 /* MSLTwitterFetcher.m */,
 			);
 			path = twitter;
 			sourceTree = "<group>";
@@ -299,6 +304,7 @@
 				0ACADD031834262000EF33A3 /* MSLProductList.m in Sources */,
 				0ACADCD11834237500EF33A3 /* MobileShopLocator.m in Sources */,
 				0ACADD09183429A000EF33A3 /* MSLLocationManager.m in Sources */,
+				0ACADD191834321300EF33A3 /* MSLTwitterFetcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,11 @@
 @implementation MSLProductList
 
 #pragma mark - Initialization
+- (id)init {
+    self = [super init];
+    return self;
+}
+
 - (id)initWithString:(NSString *)menuString {
     NSArray *menuArray = [menuString componentsSeparatedByCharactersInSet:[NSCharacterSet newlineCharacterSet]];
     return [self initWithArray:menuArray];

@@ -1,5 +1,5 @@
 //
-//  MSLWebFetcher.h
+//  MSLTwitterFetcher.h
 //  MobileShopLocator
 //
 //  Created by Kevin Jenkins on 11/13/13.
@@ -9,8 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "MSLProductFetcher.h"
 
-@interface MSLWebFetcher : NSObject<MSLProductFetcher>
-
-+ (void)setProductListURL:(NSURL *)productListURL;
+@interface MSLTwitterFetcher : NSObject<MSLProductFetcher>
 
 @end

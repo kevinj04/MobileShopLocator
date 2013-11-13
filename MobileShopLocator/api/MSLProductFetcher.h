@@ -12,6 +12,6 @@
 @protocol MSLProductFetcher <NSObject>
 
 + (MSLProductList *)fetchList;
-+ (void)fetchListWithCompletionHandler:(void(^)(NSURLResponse *response, NSData *data, NSError *connectionError))handler;
++ (void)fetchListWithCompletionHandler:(void(^)(MSLProductList *productList, NSError *error))handler;
 
 @end
