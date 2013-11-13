@@ -16,6 +16,8 @@
 		0ACADCDE1834237500EF33A3 /* libMobileShopLocator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACADCC61834237500EF33A3 /* libMobileShopLocator.a */; };
 		0ACADCE41834237500EF33A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0ACADCE21834237500EF33A3 /* InfoPlist.strings */; };
 		0ACADCE61834237500EF33A3 /* MobileShopLocatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACADCE51834237500EF33A3 /* MobileShopLocatorTests.m */; };
+		0ACADD00183424C900EF33A3 /* MSLProductListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACADCFF183424C900EF33A3 /* MSLProductListItem.m */; };
+		0ACADD031834262000EF33A3 /* MSLProductList.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACADD021834262000EF33A3 /* MSLProductList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		0ACADCE11834237500EF33A3 /* MobileShopLocatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MobileShopLocatorTests-Info.plist"; sourceTree = "<group>"; };
 		0ACADCE31834237500EF33A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0ACADCE51834237500EF33A3 /* MobileShopLocatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MobileShopLocatorTests.m; sourceTree = "<group>"; };
+		0ACADCFE183424C900EF33A3 /* MSLProductListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSLProductListItem.h; sourceTree = "<group>"; };
+		0ACADCFF183424C900EF33A3 /* MSLProductListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSLProductListItem.m; sourceTree = "<group>"; };
+		0ACADD011834262000EF33A3 /* MSLProductList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSLProductList.h; sourceTree = "<group>"; };
+		0ACADD021834262000EF33A3 /* MSLProductList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSLProductList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,9 @@
 		0ACADCCB1834237500EF33A3 /* MobileShopLocator */ = {
 			isa = PBXGroup;
 			children = (
+				0ACADCEF183423F700EF33A3 /* api */,
+				0ACADCF31834240500EF33A3 /* models */,
+				0ACADCF2183423FD00EF33A3 /* locationManager */,
 				0ACADCCE1834237500EF33A3 /* MobileShopLocator.h */,
 				0ACADCD01834237500EF33A3 /* MobileShopLocator.m */,
 				0ACADCCC1834237500EF33A3 /* Supporting Files */,
@@ -141,6 +150,55 @@
 				0ACADCE21834237500EF33A3 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0ACADCEF183423F700EF33A3 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				0ACADCF0183423F700EF33A3 /* git */,
+				0ACADCF1183423F700EF33A3 /* twitter */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		0ACADCF0183423F700EF33A3 /* git */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = git;
+			sourceTree = "<group>";
+		};
+		0ACADCF1183423F700EF33A3 /* twitter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = twitter;
+			sourceTree = "<group>";
+		};
+		0ACADCF2183423FD00EF33A3 /* locationManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = locationManager;
+			sourceTree = "<group>";
+		};
+		0ACADCF31834240500EF33A3 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				0ACADCF41834247B00EF33A3 /* productList */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		0ACADCF41834247B00EF33A3 /* productList */ = {
+			isa = PBXGroup;
+			children = (
+				0ACADCFE183424C900EF33A3 /* MSLProductListItem.h */,
+				0ACADCFF183424C900EF33A3 /* MSLProductListItem.m */,
+				0ACADD011834262000EF33A3 /* MSLProductList.h */,
+				0ACADD021834262000EF33A3 /* MSLProductList.m */,
+			);
+			path = productList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +282,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ACADD00183424C900EF33A3 /* MSLProductListItem.m in Sources */,
+				0ACADD031834262000EF33A3 /* MSLProductList.m in Sources */,
 				0ACADCD11834237500EF33A3 /* MobileShopLocator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
