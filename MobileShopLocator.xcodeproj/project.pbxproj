@@ -18,6 +18,7 @@
 		0ACADCE61834237500EF33A3 /* MobileShopLocatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACADCE51834237500EF33A3 /* MobileShopLocatorTests.m */; };
 		0ACADD00183424C900EF33A3 /* MSLProductListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACADCFF183424C900EF33A3 /* MSLProductListItem.m */; };
 		0ACADD031834262000EF33A3 /* MSLProductList.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACADD021834262000EF33A3 /* MSLProductList.m */; };
+		0ACADD09183429A000EF33A3 /* MSLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACADD08183429A000EF33A3 /* MSLLocationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		0ACADCFF183424C900EF33A3 /* MSLProductListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSLProductListItem.m; sourceTree = "<group>"; };
 		0ACADD011834262000EF33A3 /* MSLProductList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSLProductList.h; sourceTree = "<group>"; };
 		0ACADD021834262000EF33A3 /* MSLProductList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSLProductList.m; sourceTree = "<group>"; };
+		0ACADD07183429A000EF33A3 /* MSLLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSLLocationManager.h; sourceTree = "<group>"; };
+		0ACADD08183429A000EF33A3 /* MSLLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSLLocationManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +181,8 @@
 		0ACADCF2183423FD00EF33A3 /* locationManager */ = {
 			isa = PBXGroup;
 			children = (
+				0ACADD07183429A000EF33A3 /* MSLLocationManager.h */,
+				0ACADD08183429A000EF33A3 /* MSLLocationManager.m */,
 			);
 			path = locationManager;
 			sourceTree = "<group>";
@@ -285,6 +290,7 @@
 				0ACADD00183424C900EF33A3 /* MSLProductListItem.m in Sources */,
 				0ACADD031834262000EF33A3 /* MSLProductList.m in Sources */,
 				0ACADCD11834237500EF33A3 /* MobileShopLocator.m in Sources */,
+				0ACADD09183429A000EF33A3 /* MSLLocationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
