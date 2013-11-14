@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0ACADCCA1834237500EF33A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACADCC91834237500EF33A3 /* Foundation.framework */; };
-		0ACADCCF1834237500EF33A3 /* MobileShopLocator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0ACADCCE1834237500EF33A3 /* MobileShopLocator.h */; };
-		0ACADCD11834237500EF33A3 /* MobileShopLocator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACADCD01834237500EF33A3 /* MobileShopLocator.m */; };
 		0ACADCD81834237500EF33A3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACADCD71834237500EF33A3 /* XCTest.framework */; };
 		0ACADCD91834237500EF33A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACADCC91834237500EF33A3 /* Foundation.framework */; };
 		0ACADCDB1834237500EF33A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACADCDA1834237500EF33A3 /* UIKit.framework */; };
@@ -40,7 +38,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				0ACADCCF1834237500EF33A3 /* MobileShopLocator.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,8 +47,6 @@
 		0ACADCC61834237500EF33A3 /* libMobileShopLocator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMobileShopLocator.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ACADCC91834237500EF33A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0ACADCCD1834237500EF33A3 /* MobileShopLocator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MobileShopLocator-Prefix.pch"; sourceTree = "<group>"; };
-		0ACADCCE1834237500EF33A3 /* MobileShopLocator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MobileShopLocator.h; sourceTree = "<group>"; };
-		0ACADCD01834237500EF33A3 /* MobileShopLocator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MobileShopLocator.m; sourceTree = "<group>"; };
 		0ACADCD61834237500EF33A3 /* MobileShopLocatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileShopLocatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ACADCD71834237500EF33A3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		0ACADCDA1834237500EF33A3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -129,8 +124,6 @@
 				0ACADCEF183423F700EF33A3 /* api */,
 				0ACADCF31834240500EF33A3 /* models */,
 				0ACADCF2183423FD00EF33A3 /* locationManager */,
-				0ACADCCE1834237500EF33A3 /* MobileShopLocator.h */,
-				0ACADCD01834237500EF33A3 /* MobileShopLocator.m */,
 				0ACADCCC1834237500EF33A3 /* Supporting Files */,
 			);
 			path = MobileShopLocator;
@@ -302,7 +295,6 @@
 				0ACADD1018342C1800EF33A3 /* MSLWebFetcher.m in Sources */,
 				0ACADD00183424C900EF33A3 /* MSLProductListItem.m in Sources */,
 				0ACADD031834262000EF33A3 /* MSLProductList.m in Sources */,
-				0ACADCD11834237500EF33A3 /* MobileShopLocator.m in Sources */,
 				0ACADD09183429A000EF33A3 /* MSLLocationManager.m in Sources */,
 				0ACADD191834321300EF33A3 /* MSLTwitterFetcher.m in Sources */,
 			);
