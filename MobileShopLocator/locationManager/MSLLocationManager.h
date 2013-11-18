@@ -18,5 +18,4 @@
 - (void)startMonitoringLocation;
 - (void)stopMonitoringLocation;
 
-
 @end

@@ -19,6 +19,7 @@ static MSLLocationManager *_currentManager;
         _currentManager = [[MSLLocationManager alloc] init];
     });
 }
+
 - (id)init {
     if (_currentManager) { return _currentManager; }
     self = [super init];
@@ -52,6 +53,7 @@ static MSLLocationManager *_currentManager;
 }
 
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
+    // todo: handle this with notification or delegate
     NSLog(@"ERRORZ");
 }
 

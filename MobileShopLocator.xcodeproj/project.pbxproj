@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A94FF34183AC643008B8154 /* libMobileShopLocator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACADCC61834237500EF33A3 /* libMobileShopLocator.a */; };
+		0AB2E532183AC53600EADCFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACADCC91834237500EF33A3 /* Foundation.framework */; };
+		0AB2E534183AC53600EADCFE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB2E533183AC53600EADCFE /* CoreGraphics.framework */; };
+		0AB2E535183AC53600EADCFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACADCDA1834237500EF33A3 /* UIKit.framework */; };
+		0AB2E53B183AC53600EADCFE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AB2E539183AC53600EADCFE /* InfoPlist.strings */; };
+		0AB2E53D183AC53600EADCFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB2E53C183AC53600EADCFE /* main.m */; };
+		0AB2E541183AC53600EADCFE /* SPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB2E540183AC53600EADCFE /* SPAppDelegate.m */; };
+		0AB2E544183AC53600EADCFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AB2E542183AC53600EADCFE /* Main.storyboard */; };
+		0AB2E547183AC53600EADCFE /* SPFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB2E546183AC53600EADCFE /* SPFirstViewController.m */; };
+		0AB2E54A183AC53600EADCFE /* SPSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB2E549183AC53600EADCFE /* SPSecondViewController.m */; };
+		0AB2E54C183AC53600EADCFE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AB2E54B183AC53600EADCFE /* Images.xcassets */; };
+		0AB2E552183AC53600EADCFE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACADCD71834237500EF33A3 /* XCTest.framework */; };
+		0AB2E553183AC53600EADCFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACADCC91834237500EF33A3 /* Foundation.framework */; };
+		0AB2E554183AC53600EADCFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACADCDA1834237500EF33A3 /* UIKit.framework */; };
+		0AB2E55C183AC53600EADCFE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0AB2E55A183AC53600EADCFE /* InfoPlist.strings */; };
+		0AB2E55E183AC53600EADCFE /* TestAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB2E55D183AC53600EADCFE /* TestAppTests.m */; };
+		0AB2E565183AC55400EADCFE /* libMobileShopLocator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACADCC61834237500EF33A3 /* libMobileShopLocator.a */; };
 		0ACADCCA1834237500EF33A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACADCC91834237500EF33A3 /* Foundation.framework */; };
 		0ACADCD81834237500EF33A3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACADCD71834237500EF33A3 /* XCTest.framework */; };
 		0ACADCD91834237500EF33A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACADCC91834237500EF33A3 /* Foundation.framework */; };
@@ -19,9 +36,41 @@
 		0ACADD09183429A000EF33A3 /* MSLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACADD08183429A000EF33A3 /* MSLLocationManager.m */; };
 		0ACADD1018342C1800EF33A3 /* MSLWebFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACADD0F18342C1800EF33A3 /* MSLWebFetcher.m */; };
 		0ACADD191834321300EF33A3 /* MSLTwitterFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACADD181834321300EF33A3 /* MSLTwitterFetcher.m */; };
+		0ACADD76183696ED00EF33A3 /* MSLProductFetcher.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0ACADD0D18342B7200EF33A3 /* MSLProductFetcher.h */; };
+		0ACADD77183696ED00EF33A3 /* MSLWebFetcher.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0ACADD0E18342C1800EF33A3 /* MSLWebFetcher.h */; };
+		0ACADD78183696ED00EF33A3 /* MSLTwitterFetcher.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0ACADD171834321300EF33A3 /* MSLTwitterFetcher.h */; };
+		0ACADD79183696ED00EF33A3 /* MSLProductListItem.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0ACADCFE183424C900EF33A3 /* MSLProductListItem.h */; };
+		0ACADD7A183696ED00EF33A3 /* MSLProductList.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0ACADD011834262000EF33A3 /* MSLProductList.h */; };
+		0ACADD7B183696ED00EF33A3 /* MSLLocationManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0ACADD07183429A000EF33A3 /* MSLLocationManager.h */; };
+		0ACADD851836D7B500EF33A3 /* MSLTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACADD841836D7B500EF33A3 /* MSLTableViewDelegate.m */; };
+		0ACADD891836D82800EF33A3 /* MSLBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACADD881836D82800EF33A3 /* MSLBaseTableViewCell.m */; };
+		0ACADD8B1837018E00EF33A3 /* MSLTableViewCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0ACADD8A1836FFC700EF33A3 /* MSLTableViewCell.h */; };
+		0ACADD8C1837018E00EF33A3 /* MSLBaseTableViewCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0ACADD871836D82800EF33A3 /* MSLBaseTableViewCell.h */; };
+		0ACADD8D1837018E00EF33A3 /* MSLTableViewDelegate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0ACADD831836D7B500EF33A3 /* MSLTableViewDelegate.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0A94FF32183AC63F008B8154 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0ACADCBE1834237400EF33A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0ACADCC51834237500EF33A3;
+			remoteInfo = MobileShopLocator;
+		};
+		0AB2E555183AC53600EADCFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0ACADCBE1834237400EF33A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AB2E530183AC53600EADCFE;
+			remoteInfo = TestApp;
+		};
+		0AB2E566183AC55A00EADCFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0ACADCBE1834237400EF33A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0ACADCC51834237500EF33A3;
+			remoteInfo = MobileShopLocator;
+		};
 		0ACADCDC1834237500EF33A3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0ACADCBE1834237400EF33A3 /* Project object */;
@@ -38,12 +87,39 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				0ACADD8B1837018E00EF33A3 /* MSLTableViewCell.h in CopyFiles */,
+				0ACADD8C1837018E00EF33A3 /* MSLBaseTableViewCell.h in CopyFiles */,
+				0ACADD8D1837018E00EF33A3 /* MSLTableViewDelegate.h in CopyFiles */,
+				0ACADD76183696ED00EF33A3 /* MSLProductFetcher.h in CopyFiles */,
+				0ACADD77183696ED00EF33A3 /* MSLWebFetcher.h in CopyFiles */,
+				0ACADD78183696ED00EF33A3 /* MSLTwitterFetcher.h in CopyFiles */,
+				0ACADD79183696ED00EF33A3 /* MSLProductListItem.h in CopyFiles */,
+				0ACADD7A183696ED00EF33A3 /* MSLProductList.h in CopyFiles */,
+				0ACADD7B183696ED00EF33A3 /* MSLLocationManager.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0AB2E531183AC53600EADCFE /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AB2E533183AC53600EADCFE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0AB2E538183AC53600EADCFE /* TestApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestApp-Info.plist"; sourceTree = "<group>"; };
+		0AB2E53A183AC53600EADCFE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0AB2E53C183AC53600EADCFE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0AB2E53E183AC53600EADCFE /* TestApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestApp-Prefix.pch"; sourceTree = "<group>"; };
+		0AB2E53F183AC53600EADCFE /* SPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPAppDelegate.h; sourceTree = "<group>"; };
+		0AB2E540183AC53600EADCFE /* SPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPAppDelegate.m; sourceTree = "<group>"; };
+		0AB2E543183AC53600EADCFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0AB2E545183AC53600EADCFE /* SPFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPFirstViewController.h; sourceTree = "<group>"; };
+		0AB2E546183AC53600EADCFE /* SPFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPFirstViewController.m; sourceTree = "<group>"; };
+		0AB2E548183AC53600EADCFE /* SPSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPSecondViewController.h; sourceTree = "<group>"; };
+		0AB2E549183AC53600EADCFE /* SPSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPSecondViewController.m; sourceTree = "<group>"; };
+		0AB2E54B183AC53600EADCFE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0AB2E551183AC53600EADCFE /* TestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AB2E559183AC53600EADCFE /* TestAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestAppTests-Info.plist"; sourceTree = "<group>"; };
+		0AB2E55B183AC53600EADCFE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0AB2E55D183AC53600EADCFE /* TestAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAppTests.m; sourceTree = "<group>"; };
 		0ACADCC61834237500EF33A3 /* libMobileShopLocator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMobileShopLocator.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ACADCC91834237500EF33A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0ACADCCD1834237500EF33A3 /* MobileShopLocator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MobileShopLocator-Prefix.pch"; sourceTree = "<group>"; };
@@ -64,9 +140,36 @@
 		0ACADD0F18342C1800EF33A3 /* MSLWebFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSLWebFetcher.m; sourceTree = "<group>"; };
 		0ACADD171834321300EF33A3 /* MSLTwitterFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSLTwitterFetcher.h; sourceTree = "<group>"; };
 		0ACADD181834321300EF33A3 /* MSLTwitterFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSLTwitterFetcher.m; sourceTree = "<group>"; };
+		0ACADD831836D7B500EF33A3 /* MSLTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSLTableViewDelegate.h; sourceTree = "<group>"; };
+		0ACADD841836D7B500EF33A3 /* MSLTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSLTableViewDelegate.m; sourceTree = "<group>"; };
+		0ACADD871836D82800EF33A3 /* MSLBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSLBaseTableViewCell.h; sourceTree = "<group>"; };
+		0ACADD881836D82800EF33A3 /* MSLBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSLBaseTableViewCell.m; sourceTree = "<group>"; };
+		0ACADD8A1836FFC700EF33A3 /* MSLTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSLTableViewCell.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0AB2E52E183AC53600EADCFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A94FF34183AC643008B8154 /* libMobileShopLocator.a in Frameworks */,
+				0AB2E534183AC53600EADCFE /* CoreGraphics.framework in Frameworks */,
+				0AB2E535183AC53600EADCFE /* UIKit.framework in Frameworks */,
+				0AB2E532183AC53600EADCFE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AB2E54E183AC53600EADCFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AB2E565183AC55400EADCFE /* libMobileShopLocator.a in Frameworks */,
+				0AB2E552183AC53600EADCFE /* XCTest.framework in Frameworks */,
+				0AB2E554183AC53600EADCFE /* UIKit.framework in Frameworks */,
+				0AB2E553183AC53600EADCFE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0ACADCC31834237500EF33A3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -89,11 +192,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AB2E536183AC53600EADCFE /* TestApp */ = {
+			isa = PBXGroup;
+			children = (
+				0AB2E53F183AC53600EADCFE /* SPAppDelegate.h */,
+				0AB2E540183AC53600EADCFE /* SPAppDelegate.m */,
+				0AB2E542183AC53600EADCFE /* Main.storyboard */,
+				0AB2E545183AC53600EADCFE /* SPFirstViewController.h */,
+				0AB2E546183AC53600EADCFE /* SPFirstViewController.m */,
+				0AB2E548183AC53600EADCFE /* SPSecondViewController.h */,
+				0AB2E549183AC53600EADCFE /* SPSecondViewController.m */,
+				0AB2E54B183AC53600EADCFE /* Images.xcassets */,
+				0AB2E537183AC53600EADCFE /* Supporting Files */,
+			);
+			path = TestApp;
+			sourceTree = "<group>";
+		};
+		0AB2E537183AC53600EADCFE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AB2E538183AC53600EADCFE /* TestApp-Info.plist */,
+				0AB2E539183AC53600EADCFE /* InfoPlist.strings */,
+				0AB2E53C183AC53600EADCFE /* main.m */,
+				0AB2E53E183AC53600EADCFE /* TestApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0AB2E557183AC53600EADCFE /* TestAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				0AB2E55D183AC53600EADCFE /* TestAppTests.m */,
+				0AB2E558183AC53600EADCFE /* Supporting Files */,
+			);
+			path = TestAppTests;
+			sourceTree = "<group>";
+		};
+		0AB2E558183AC53600EADCFE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AB2E559183AC53600EADCFE /* TestAppTests-Info.plist */,
+				0AB2E55A183AC53600EADCFE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		0ACADCBD1834237400EF33A3 = {
 			isa = PBXGroup;
 			children = (
 				0ACADCCB1834237500EF33A3 /* MobileShopLocator */,
 				0ACADCDF1834237500EF33A3 /* MobileShopLocatorTests */,
+				0AB2E536183AC53600EADCFE /* TestApp */,
+				0AB2E557183AC53600EADCFE /* TestAppTests */,
 				0ACADCC81834237500EF33A3 /* Frameworks */,
 				0ACADCC71834237500EF33A3 /* Products */,
 			);
@@ -104,6 +254,8 @@
 			children = (
 				0ACADCC61834237500EF33A3 /* libMobileShopLocator.a */,
 				0ACADCD61834237500EF33A3 /* MobileShopLocatorTests.xctest */,
+				0AB2E531183AC53600EADCFE /* TestApp.app */,
+				0AB2E551183AC53600EADCFE /* TestAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,6 +266,7 @@
 				0ACADCC91834237500EF33A3 /* Foundation.framework */,
 				0ACADCD71834237500EF33A3 /* XCTest.framework */,
 				0ACADCDA1834237500EF33A3 /* UIKit.framework */,
+				0AB2E533183AC53600EADCFE /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -121,6 +274,8 @@
 		0ACADCCB1834237500EF33A3 /* MobileShopLocator */ = {
 			isa = PBXGroup;
 			children = (
+				0ACADD861836D80D00EF33A3 /* views */,
+				0ACADD821836D79200EF33A3 /* delegates */,
 				0ACADCEF183423F700EF33A3 /* api */,
 				0ACADCF31834240500EF33A3 /* models */,
 				0ACADCF2183423FD00EF33A3 /* locationManager */,
@@ -211,9 +366,65 @@
 			path = productList;
 			sourceTree = "<group>";
 		};
+		0ACADD821836D79200EF33A3 /* delegates */ = {
+			isa = PBXGroup;
+			children = (
+				0ACADD831836D7B500EF33A3 /* MSLTableViewDelegate.h */,
+				0ACADD841836D7B500EF33A3 /* MSLTableViewDelegate.m */,
+			);
+			path = delegates;
+			sourceTree = "<group>";
+		};
+		0ACADD861836D80D00EF33A3 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				0ACADD8A1836FFC700EF33A3 /* MSLTableViewCell.h */,
+				0ACADD871836D82800EF33A3 /* MSLBaseTableViewCell.h */,
+				0ACADD881836D82800EF33A3 /* MSLBaseTableViewCell.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0AB2E530183AC53600EADCFE /* TestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AB2E55F183AC53600EADCFE /* Build configuration list for PBXNativeTarget "TestApp" */;
+			buildPhases = (
+				0AB2E52D183AC53600EADCFE /* Sources */,
+				0AB2E52E183AC53600EADCFE /* Frameworks */,
+				0AB2E52F183AC53600EADCFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A94FF33183AC63F008B8154 /* PBXTargetDependency */,
+			);
+			name = TestApp;
+			productName = TestApp;
+			productReference = 0AB2E531183AC53600EADCFE /* TestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0AB2E550183AC53600EADCFE /* TestAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AB2E562183AC53600EADCFE /* Build configuration list for PBXNativeTarget "TestAppTests" */;
+			buildPhases = (
+				0AB2E54D183AC53600EADCFE /* Sources */,
+				0AB2E54E183AC53600EADCFE /* Frameworks */,
+				0AB2E54F183AC53600EADCFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AB2E567183AC55A00EADCFE /* PBXTargetDependency */,
+				0AB2E556183AC53600EADCFE /* PBXTargetDependency */,
+			);
+			name = TestAppTests;
+			productName = TestAppTests;
+			productReference = 0AB2E551183AC53600EADCFE /* TestAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		0ACADCC51834237500EF33A3 /* MobileShopLocator */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0ACADCE91834237500EF33A3 /* Build configuration list for PBXNativeTarget "MobileShopLocator" */;
@@ -257,6 +468,14 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = somethingPointless;
+				TargetAttributes = {
+					0AB2E550183AC53600EADCFE = {
+						TestTargetID = 0AB2E530183AC53600EADCFE;
+					};
+					0ACADCD51834237500EF33A3 = {
+						TestTargetID = 0AB2E530183AC53600EADCFE;
+					};
+				};
 			};
 			buildConfigurationList = 0ACADCC11834237400EF33A3 /* Build configuration list for PBXProject "MobileShopLocator" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -264,6 +483,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 0ACADCBD1834237400EF33A3;
 			productRefGroup = 0ACADCC71834237500EF33A3 /* Products */;
@@ -272,11 +492,31 @@
 			targets = (
 				0ACADCC51834237500EF33A3 /* MobileShopLocator */,
 				0ACADCD51834237500EF33A3 /* MobileShopLocatorTests */,
+				0AB2E530183AC53600EADCFE /* TestApp */,
+				0AB2E550183AC53600EADCFE /* TestAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0AB2E52F183AC53600EADCFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AB2E54C183AC53600EADCFE /* Images.xcassets in Resources */,
+				0AB2E53B183AC53600EADCFE /* InfoPlist.strings in Resources */,
+				0AB2E544183AC53600EADCFE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AB2E54F183AC53600EADCFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AB2E55C183AC53600EADCFE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0ACADCD41834237500EF33A3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -288,6 +528,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0AB2E52D183AC53600EADCFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AB2E53D183AC53600EADCFE /* main.m in Sources */,
+				0AB2E54A183AC53600EADCFE /* SPSecondViewController.m in Sources */,
+				0AB2E547183AC53600EADCFE /* SPFirstViewController.m in Sources */,
+				0AB2E541183AC53600EADCFE /* SPAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AB2E54D183AC53600EADCFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AB2E55E183AC53600EADCFE /* TestAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0ACADCC21834237500EF33A3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -295,6 +554,8 @@
 				0ACADD1018342C1800EF33A3 /* MSLWebFetcher.m in Sources */,
 				0ACADD00183424C900EF33A3 /* MSLProductListItem.m in Sources */,
 				0ACADD031834262000EF33A3 /* MSLProductList.m in Sources */,
+				0ACADD851836D7B500EF33A3 /* MSLTableViewDelegate.m in Sources */,
+				0ACADD891836D82800EF33A3 /* MSLBaseTableViewCell.m in Sources */,
 				0ACADD09183429A000EF33A3 /* MSLLocationManager.m in Sources */,
 				0ACADD191834321300EF33A3 /* MSLTwitterFetcher.m in Sources */,
 			);
@@ -311,6 +572,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0A94FF33183AC63F008B8154 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0ACADCC51834237500EF33A3 /* MobileShopLocator */;
+			targetProxy = 0A94FF32183AC63F008B8154 /* PBXContainerItemProxy */;
+		};
+		0AB2E556183AC53600EADCFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AB2E530183AC53600EADCFE /* TestApp */;
+			targetProxy = 0AB2E555183AC53600EADCFE /* PBXContainerItemProxy */;
+		};
+		0AB2E567183AC55A00EADCFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0ACADCC51834237500EF33A3 /* MobileShopLocator */;
+			targetProxy = 0AB2E566183AC55A00EADCFE /* PBXContainerItemProxy */;
+		};
 		0ACADCDD1834237500EF33A3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0ACADCC51834237500EF33A3 /* MobileShopLocator */;
@@ -319,6 +595,30 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		0AB2E539183AC53600EADCFE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AB2E53A183AC53600EADCFE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0AB2E542183AC53600EADCFE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AB2E543183AC53600EADCFE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0AB2E55A183AC53600EADCFE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AB2E55B183AC53600EADCFE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		0ACADCE21834237500EF33A3 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -330,6 +630,90 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0AB2E560183AC53600EADCFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestApp/TestApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TestApp/TestApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0AB2E561183AC53600EADCFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestApp/TestApp-Prefix.pch";
+				INFOPLIST_FILE = "TestApp/TestApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0AB2E563183AC53600EADCFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestApp.app/TestApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestApp/TestApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TestAppTests/TestAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0AB2E564183AC53600EADCFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestApp.app/TestApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestApp/TestApp-Prefix.pch";
+				INFOPLIST_FILE = "TestAppTests/TestAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		0ACADCE71834237500EF33A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -406,6 +790,7 @@
 				DSTROOT = /tmp/MobileShopLocator.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MobileShopLocator/MobileShopLocator-Prefix.pch";
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -428,6 +813,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestApp.app/TestApp";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -441,6 +827,7 @@
 				);
 				INFOPLIST_FILE = "MobileShopLocatorTests/MobileShopLocatorTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -449,6 +836,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestApp.app/TestApp";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -458,6 +846,7 @@
 				GCC_PREFIX_HEADER = "MobileShopLocator/MobileShopLocator-Prefix.pch";
 				INFOPLIST_FILE = "MobileShopLocatorTests/MobileShopLocatorTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -465,6 +854,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0AB2E55F183AC53600EADCFE /* Build configuration list for PBXNativeTarget "TestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AB2E560183AC53600EADCFE /* Debug */,
+				0AB2E561183AC53600EADCFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AB2E562183AC53600EADCFE /* Build configuration list for PBXNativeTarget "TestAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AB2E563183AC53600EADCFE /* Debug */,
+				0AB2E564183AC53600EADCFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0ACADCC11834237400EF33A3 /* Build configuration list for PBXProject "MobileShopLocator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -481,6 +888,7 @@
 				0ACADCEB1834237500EF33A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0ACADCEC1834237500EF33A3 /* Build configuration list for PBXNativeTarget "MobileShopLocatorTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +897,7 @@
 				0ACADCEE1834237500EF33A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
