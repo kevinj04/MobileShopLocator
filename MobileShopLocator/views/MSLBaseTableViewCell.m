@@ -29,11 +29,12 @@ NSString *const MSLTableViewCellImageRetrieved = @"MSLTableViewCellImageRetrieve
 #pragma mark - MSLTableViewCell Protocol
 - (void)updateWithProductListItem:(MSLProductListItem *)item {
     self.textLabel.text = item.title;
-    self.detailTextLabel.text = item.title;
+    self.detailTextLabel.text = item.description;
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(imageRetrieved:) name:MSLTableViewCellImageRetrieved object:self];
     
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:item.imageURLString]];
+    NSURL *url = [NSURL URLWithString:item.imageURLString];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
         
         if (connectionError) {
