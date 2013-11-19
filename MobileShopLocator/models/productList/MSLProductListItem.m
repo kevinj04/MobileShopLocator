@@ -32,4 +32,10 @@
     self.imageURLString = elements[2];
 }
 
+#pragma mark - Getters
+- (NSString *)imageURLString {
+    NSString *urlString = [_imageURLString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    return [urlString stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+}
+
 @end
