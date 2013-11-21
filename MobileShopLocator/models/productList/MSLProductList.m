@@ -48,7 +48,7 @@
     for (NSString *entryLine in menuArray) {
         if ([entryLine hasPrefix:@"#"]) { continue; }
         MSLProductListItem *menuItem = [MSLProductListItem itemWithString:entryLine];
-        [menuItems addObject:menuItem];
+        if (menuItem) { [menuItems addObject:menuItem]; }
     }
     return [NSArray arrayWithArray:menuItems];
 }
