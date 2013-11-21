@@ -10,6 +10,7 @@
 		0A94FF34183AC643008B8154 /* libMobileShopLocator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACADCC61834237500EF33A3 /* libMobileShopLocator.a */; };
 		0A9A3BE5183E9B9C00BEB149 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9A3BE4183E9B9C00BEB149 /* MapKit.framework */; };
 		0A9A3BEE183EA49500BEB149 /* MSLAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9A3BED183EA49500BEB149 /* MSLAnnotation.m */; };
+		0A9A3BEF183EA67B00BEB149 /* MSLAnnotation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0A9A3BEC183EA49500BEB149 /* MSLAnnotation.h */; };
 		0AB2E532183AC53600EADCFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACADCC91834237500EF33A3 /* Foundation.framework */; };
 		0AB2E534183AC53600EADCFE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB2E533183AC53600EADCFE /* CoreGraphics.framework */; };
 		0AB2E535183AC53600EADCFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACADCDA1834237500EF33A3 /* UIKit.framework */; };
@@ -89,6 +90,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				0A9A3BEF183EA67B00BEB149 /* MSLAnnotation.h in CopyFiles */,
 				0ACADD8B1837018E00EF33A3 /* MSLTableViewCell.h in CopyFiles */,
 				0ACADD8C1837018E00EF33A3 /* MSLBaseTableViewCell.h in CopyFiles */,
 				0ACADD8D1837018E00EF33A3 /* MSLTableViewDelegate.h in CopyFiles */,
