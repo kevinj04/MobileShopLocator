@@ -16,6 +16,7 @@
     self = [super init];
     if (self) {
         [self setupWithString:menuItemString];
+        if (self.title == nil) { return nil; }
     }
     return self;
 }
