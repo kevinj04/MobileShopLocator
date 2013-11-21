@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0A94FF34183AC643008B8154 /* libMobileShopLocator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACADCC61834237500EF33A3 /* libMobileShopLocator.a */; };
 		0A9A3BE5183E9B9C00BEB149 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9A3BE4183E9B9C00BEB149 /* MapKit.framework */; };
+		0A9A3BEE183EA49500BEB149 /* MSLAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9A3BED183EA49500BEB149 /* MSLAnnotation.m */; };
 		0AB2E532183AC53600EADCFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACADCC91834237500EF33A3 /* Foundation.framework */; };
 		0AB2E534183AC53600EADCFE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB2E533183AC53600EADCFE /* CoreGraphics.framework */; };
 		0AB2E535183AC53600EADCFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACADCDA1834237500EF33A3 /* UIKit.framework */; };
@@ -104,6 +105,8 @@
 
 /* Begin PBXFileReference section */
 		0A9A3BE4183E9B9C00BEB149 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0A9A3BEC183EA49500BEB149 /* MSLAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSLAnnotation.h; sourceTree = "<group>"; };
+		0A9A3BED183EA49500BEB149 /* MSLAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSLAnnotation.m; sourceTree = "<group>"; };
 		0AB2E531183AC53600EADCFE /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB2E533183AC53600EADCFE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		0AB2E538183AC53600EADCFE /* TestApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestApp-Info.plist"; sourceTree = "<group>"; };
@@ -195,6 +198,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A9A3BEB183EA43700BEB149 /* annotations */ = {
+			isa = PBXGroup;
+			children = (
+				0A9A3BEC183EA49500BEB149 /* MSLAnnotation.h */,
+				0A9A3BED183EA49500BEB149 /* MSLAnnotation.m */,
+			);
+			path = annotations;
+			sourceTree = "<group>";
+		};
 		0AB2E536183AC53600EADCFE /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +290,7 @@
 		0ACADCCB1834237500EF33A3 /* MobileShopLocator */ = {
 			isa = PBXGroup;
 			children = (
+				0A9A3BEB183EA43700BEB149 /* annotations */,
 				0ACADD861836D80D00EF33A3 /* views */,
 				0ACADD821836D79200EF33A3 /* delegates */,
 				0ACADCEF183423F700EF33A3 /* api */,
@@ -556,6 +569,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ACADD1018342C1800EF33A3 /* MSLWebFetcher.m in Sources */,
+				0A9A3BEE183EA49500BEB149 /* MSLAnnotation.m in Sources */,
 				0ACADD00183424C900EF33A3 /* MSLProductListItem.m in Sources */,
 				0ACADD031834262000EF33A3 /* MSLProductList.m in Sources */,
 				0ACADD851836D7B500EF33A3 /* MSLTableViewDelegate.m in Sources */,

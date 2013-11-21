@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
-@interface SPSecondViewController : UIViewController
+@interface SPSecondViewController : UIViewController<MKMapViewDelegate>
+
+@property (strong, nonatomic) IBOutlet MKMapView *mapView;
 
 @end

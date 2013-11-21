@@ -81,6 +81,9 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="LmO-Qa-mLw"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="QUy-BD-bpt" id="BPL-Eg-EQQ"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -92,6 +95,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="Z7h-1E-pvt"/>
+                    <connections>
+                        <outlet property="mapView" destination="nnm-kG-FC6" id="w5t-Xw-AKp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>
             </objects>

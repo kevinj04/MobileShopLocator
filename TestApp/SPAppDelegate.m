@@ -7,12 +7,14 @@
 //
 
 #import "SPAppDelegate.h"
+#import "MSLLocationManager.h"
 
 @implementation SPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [[MSLLocationManager currentManager] startMonitoringLocation];
     return YES;
 }
 							
