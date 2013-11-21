@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A94FF34183AC643008B8154 /* libMobileShopLocator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACADCC61834237500EF33A3 /* libMobileShopLocator.a */; };
+		0A9A3BE5183E9B9C00BEB149 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9A3BE4183E9B9C00BEB149 /* MapKit.framework */; };
 		0AB2E532183AC53600EADCFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACADCC91834237500EF33A3 /* Foundation.framework */; };
 		0AB2E534183AC53600EADCFE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB2E533183AC53600EADCFE /* CoreGraphics.framework */; };
 		0AB2E535183AC53600EADCFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACADCDA1834237500EF33A3 /* UIKit.framework */; };
@@ -102,6 +103,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A9A3BE4183E9B9C00BEB149 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0AB2E531183AC53600EADCFE /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB2E533183AC53600EADCFE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		0AB2E538183AC53600EADCFE /* TestApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestApp-Info.plist"; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A9A3BE5183E9B9C00BEB149 /* MapKit.framework in Frameworks */,
 				0A94FF34183AC643008B8154 /* libMobileShopLocator.a in Frameworks */,
 				0AB2E534183AC53600EADCFE /* CoreGraphics.framework in Frameworks */,
 				0AB2E535183AC53600EADCFE /* UIKit.framework in Frameworks */,
@@ -263,6 +266,7 @@
 		0ACADCC81834237500EF33A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A9A3BE4183E9B9C00BEB149 /* MapKit.framework */,
 				0ACADCC91834237500EF33A3 /* Foundation.framework */,
 				0ACADCD71834237500EF33A3 /* XCTest.framework */,
 				0ACADCDA1834237500EF33A3 /* UIKit.framework */,
