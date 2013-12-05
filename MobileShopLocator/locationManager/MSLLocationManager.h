@@ -13,6 +13,7 @@
 
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) CLLocation        *currentLocation;
+@property (strong, nonatomic) CLLocation        *storeLocation;
 
 + (MSLLocationManager *)currentManager;
 - (void)startMonitoringLocation;

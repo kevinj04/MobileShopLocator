@@ -11,4 +11,7 @@
 
 @interface MSLTwitterFetcher : NSObject<MSLProductFetcher>
 
++ (void)setup;
++ (void )fetchLocation;
+
 @end

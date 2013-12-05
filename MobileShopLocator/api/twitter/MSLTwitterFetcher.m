@@ -44,48 +44,51 @@ static ACAccountStore *_accountStore;
     return request;
 }
 
-+ (MSLProductList *)listFromTimeLineResponseData:(NSData *)data error:(NSError *)error {
-    
++ (NSArray *)tweetsFromTimelineData:(NSData *)data error:(NSError *)error {
     NSError *jsonError;
     NSArray *timelineData = [NSJSONSerialization JSONObjectWithData:data
                                                             options:NSJSONReadingAllowFragments
                                                               error:&jsonError];
+    if (timelineData) {
+        return timelineData;
+    }
+    else {
+        NSLog(@"JSON Error: %@", [jsonError localizedDescription]);
+        error = jsonError;
+        return nil;
+    }
+}
+
++ (MSLProductList *)listFromTimeLineResponseData:(NSData *)data error:(NSError *)error {
+    NSArray *timelineData = [MSLTwitterFetcher tweetsFromTimelineData:data error:error];
     if (timelineData) {
         MSLProductList *productList = [[MSLProductList alloc] init];
         productList.items = [MSLTwitterFetcher itemsFromTweetArray:timelineData];
         return productList;
     }
     else {
-        NSLog(@"JSON Error: %@", [jsonError localizedDescription]);
+        NSLog(@"Error: %@", [error localizedDescription]);
         return nil;
     }
 }
 
-+ (void)fetchTimelineForUser:(NSString *)username withHandler:(void(^)(MSLProductList *productList, NSError *error))handler {
-
++ (void)fetchTimelineForUser:(NSString *)username withHandler:(void(^)(NSArray *tweetArray, NSError *error))handler {
     ACAccountType *twitterAccountType = [_accountStore accountTypeWithAccountTypeIdentifier:ACAccountTypeIdentifierTwitter];
     if (twitterAccountType == nil) { return; }
-    
     [_accountStore requestAccessToAccountsWithType:twitterAccountType options:NULL completion:^(BOOL granted, NSError *error) {
-        
+
         if (!granted) { return; }
-        
+
         NSArray *twitterAccounts = [_accountStore accountsWithAccountType:twitterAccountType];
         SLRequest *request = [MSLTwitterFetcher requestTimeLineForUserName:username];
         request.account = twitterAccounts.lastObject;
 
         [request performRequestWithHandler:^(NSData *responseData, NSHTTPURLResponse *urlResponse, NSError *error) {
-            
-            MSLProductList *productList = nil;
-            if (!error) {
-                productList = [MSLTwitterFetcher listFromTimeLineResponseData:responseData error:error];
-            }
-            handler(productList, error);
-            
+            NSArray *tweetArray = [MSLTwitterFetcher tweetsFromTimelineData:responseData error:error];
+            handler(tweetArray, error);
          }];
     }];
 }
-
 
 #pragma mark - Tweet Processing
 + (NSArray *)itemsFromTweetArray:(NSArray *)tweetArray {
@@ -104,6 +107,40 @@ static ACAccountStore *_accountStore;
         return [MSLProductListItem itemWithString:tweetString];
     }
     return nil;
+}
+
++ (NSString *)locationFromTweetArray:(NSArray *)tweetArray {
+    NSString *location;
+    for (NSDictionary *tweet in tweetArray) {
+        if ((location = [MSLTwitterFetcher locationFromTweet:tweet])) { return location; }
+    }
+    return location;
+}
+
++ (NSString *)locationFromTweet:(NSDictionary *)tweet {
+    if ([tweet[@"text"] isEqualToString:@"Stuff."]) {
+        return NSStringFromCGPoint([MSLTwitterFetcher coordinateFromTweet:tweet]);
+    }
+    return nil;
+}
+
++ (CGPoint)coordinateFromTweet:(NSDictionary *)tweet {
+    NSDictionary *geoDictionary = tweet[@"geo"];
+    NSArray *coordinates = geoDictionary[@"coordinates"];
+    if (coordinates) {
+        return CGPointMake([coordinates[1] floatValue], [coordinates[0] floatValue]);
+    }
+    return CGPointZero;
+}
+
+#pragma mark - Location Finding
++ (void)fetchLocation {
+    [self fetchTimelineForUser:@"Tweetor9000" withHandler:^(NSArray *tweetArray, NSError *error) {
+
+        if (error) { NSLog(@"Failed to fetch timeline. %@", error.localizedDescription); return; }
+        NSString *locationString = [MSLTwitterFetcher locationFromTweetArray:tweetArray];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"MSLLocationUpdated" object:self userInfo:@{@"MSLLocationUpdated":locationString}];
+     }];
 }
 
 @end

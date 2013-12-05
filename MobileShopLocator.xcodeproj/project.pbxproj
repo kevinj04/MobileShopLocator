@@ -11,6 +11,10 @@
 		0A9A3BE5183E9B9C00BEB149 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9A3BE4183E9B9C00BEB149 /* MapKit.framework */; };
 		0A9A3BEE183EA49500BEB149 /* MSLAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9A3BED183EA49500BEB149 /* MSLAnnotation.m */; };
 		0A9A3BEF183EA67B00BEB149 /* MSLAnnotation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0A9A3BEC183EA49500BEB149 /* MSLAnnotation.h */; };
+		0AAB5C2B18510DA100A25409 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAB5C2918510D8600A25409 /* Social.framework */; };
+		0AAB5C2D18510DA600A25409 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAB5C2C18510DA600A25409 /* Accounts.framework */; };
+		0AAB5C2E18510E2100A25409 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAB5C2C18510DA600A25409 /* Accounts.framework */; };
+		0AAB5C2F18510E2600A25409 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAB5C2918510D8600A25409 /* Social.framework */; };
 		0AB2E532183AC53600EADCFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACADCC91834237500EF33A3 /* Foundation.framework */; };
 		0AB2E534183AC53600EADCFE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB2E533183AC53600EADCFE /* CoreGraphics.framework */; };
 		0AB2E535183AC53600EADCFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ACADCDA1834237500EF33A3 /* UIKit.framework */; };
@@ -109,6 +113,8 @@
 		0A9A3BE4183E9B9C00BEB149 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0A9A3BEC183EA49500BEB149 /* MSLAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSLAnnotation.h; sourceTree = "<group>"; };
 		0A9A3BED183EA49500BEB149 /* MSLAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSLAnnotation.m; sourceTree = "<group>"; };
+		0AAB5C2918510D8600A25409 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		0AAB5C2C18510DA600A25409 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		0AB2E531183AC53600EADCFE /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB2E533183AC53600EADCFE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		0AB2E538183AC53600EADCFE /* TestApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestApp-Info.plist"; sourceTree = "<group>"; };
@@ -159,6 +165,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AAB5C2F18510E2600A25409 /* Social.framework in Frameworks */,
+				0AAB5C2E18510E2100A25409 /* Accounts.framework in Frameworks */,
 				0A9A3BE5183E9B9C00BEB149 /* MapKit.framework in Frameworks */,
 				0A94FF34183AC643008B8154 /* libMobileShopLocator.a in Frameworks */,
 				0AB2E534183AC53600EADCFE /* CoreGraphics.framework in Frameworks */,
@@ -182,6 +190,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AAB5C2D18510DA600A25409 /* Accounts.framework in Frameworks */,
+				0AAB5C2B18510DA100A25409 /* Social.framework in Frameworks */,
 				0ACADCCA1834237500EF33A3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +290,8 @@
 		0ACADCC81834237500EF33A3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0AAB5C2C18510DA600A25409 /* Accounts.framework */,
+				0AAB5C2918510D8600A25409 /* Social.framework */,
 				0A9A3BE4183E9B9C00BEB149 /* MapKit.framework */,
 				0ACADCC91834237500EF33A3 /* Foundation.framework */,
 				0ACADCD71834237500EF33A3 /* XCTest.framework */,

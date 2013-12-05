@@ -7,6 +7,7 @@
 //
 
 #import "MSLLocationManager.h"
+#import "MSLTwitterFetcher.h"
 
 @implementation MSLLocationManager
 
@@ -17,6 +18,7 @@ static MSLLocationManager *_currentManager;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _currentManager = [[MSLLocationManager alloc] init];
+        [[NSNotificationCenter defaultCenter] addObserver:_currentManager selector:@selector(storeLocationUpdated:) name:@"MSLLocationUpdated" object:[MSLTwitterFetcher class]];
     });
 }
 
@@ -55,6 +57,13 @@ static MSLLocationManager *_currentManager;
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
     // todo: handle this with notification or delegate
     NSLog(@"ERRORZ");
+}
+
+#pragma mark - Notification Handlers
+- (void)storeLocationUpdated:(NSNotification *)notification {
+    CGPoint storeLocation = CGPointFromString(notification.userInfo[@"MSLLocationUpdated"]);
+    self.storeLocation = [[CLLocation alloc] initWithLatitude:storeLocation.y longitude:storeLocation.x];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"MSLStoreLocated" object:self];
 }
 
 @end
