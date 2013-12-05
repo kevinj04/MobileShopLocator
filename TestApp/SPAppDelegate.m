@@ -8,6 +8,7 @@
 
 #import "SPAppDelegate.h"
 #import "MSLLocationManager.h"
+#import "MSLTwitterFetcher.h"
 
 @implementation SPAppDelegate
 
@@ -15,6 +16,8 @@
 {
     // Override point for customization after application launch.
     [[MSLLocationManager currentManager] startMonitoringLocation];
+    [MSLTwitterFetcher setup];
+    [MSLTwitterFetcher fetchLocation];
     return YES;
 }
 							

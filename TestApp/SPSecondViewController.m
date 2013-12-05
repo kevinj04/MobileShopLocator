@@ -22,6 +22,7 @@
     [super viewDidLoad];
     self.mapView.showsUserLocation = YES;
     [self.mapView addAnnotation:[self annotation]];
+    [self.mapView addAnnotation:[self storeAnnotation]];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -36,6 +37,14 @@
     CLLocationCoordinate2D coordinate = [[[MSLLocationManager currentManager] currentLocation] coordinate];
     MSLAnnotation *annotation = [[MSLAnnotation alloc] initWithCoordinate:coordinate];
     annotation.title = @"hello";
+    annotation.subtitle = @"yum!";
+    return annotation;
+}
+
+- (id<MKAnnotation>)storeAnnotation {
+    CLLocationCoordinate2D coordinate = [[[MSLLocationManager currentManager] storeLocation] coordinate];
+    MSLAnnotation *annotation = [[MSLAnnotation alloc] initWithCoordinate:coordinate];
+    annotation.title = @"THE STORE";
     annotation.subtitle = @"yum!";
     return annotation;
 }
